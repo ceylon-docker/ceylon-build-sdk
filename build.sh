@@ -33,6 +33,6 @@ wget https://github.com/ceylon/ceylon-sdk/archive/${CEYLON_VERSION}.zip
 unzip ${CEYLON_VERSION}.zip
 cd ceylon-sdk-${CEYLON_VERSION}
 ant clean dist
-sudo rm -rf /output/sdk-modules
-sudo cp -a modules /output/sdk-modules
+sudo rm -rf /output/sdk-modules-${CEYLON_VERSION}
+sudo cp -a modules /output/sdk-modules-${CEYLON_VERSION}
 
